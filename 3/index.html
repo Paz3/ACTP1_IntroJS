@@ -14,6 +14,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style type="text/css">
+      .color_texto {
+        color: red;
+      }
+  
+      .fondo_am{
+        background-color: yellow;
+      }
+
+      .fondo_gris{
+        background-color: grey;
+        transition-duration: 3s, 5s, 3s, 5s;
+      }
+
+      .grande{
+        font-size: 10em;
+      }
+
+    </style>
   </head>
   <body>
     <h1> Hey !! </h1>
@@ -62,5 +81,16 @@
 
       </fieldset>
     </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+
+  $("h1").addClass("color_texto");
+  $(".section-1").addClass("fondo_am");
+  $(".counter").addClass("grande");
+  $("#row-3").on('click', 'fondo_gris');
+
+</script>
+
   </body>
 </html>
